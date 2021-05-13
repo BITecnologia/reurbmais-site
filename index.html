@@ -1,0 +1,1995 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Home</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <!-- Stylesheets-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700,900"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/style.css" id="main-styles-link" />
+    <!--[if lt IE 10]>
+      <div
+        style="
+          background: #212121;
+          padding: 10px 0;
+          box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+          clear: both;
+          text-align: center;
+          position: relative;
+          z-index: 1;
+        "
+      >
+        <a href="https://windows.microsoft.com/en-US/internet-explorer/"
+          ><img
+            src="images/ie8-panel/warning_bar_0000_us.jpg"
+            border="0"
+            height="42"
+            width="820"
+            alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."
+        /></a>
+      </div>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container">
+          <div class="cssload-speeding-wheel"></div>
+        </div>
+        <p>Loading...</p>
+      </div>
+    </div>
+    <div class="page">
+      <!-- Page Header-->
+      <header class="section page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap rd-navbar-absolute">
+          <nav
+            class="rd-navbar rd-navbar-creative"
+            data-layout="rd-navbar-fixed"
+            data-sm-layout="rd-navbar-fixed"
+            data-md-layout="rd-navbar-fixed"
+            data-md-device-layout="rd-navbar-fixed"
+            data-lg-layout="rd-navbar-static"
+            data-lg-device-layout="rd-navbar-static"
+            data-xl-layout="rd-navbar-static"
+            data-xl-device-layout="rd-navbar-static"
+            data-lg-stick-up-offset="20px"
+            data-xl-stick-up-offset="20px"
+            data-xxl-stick-up-offset="20px"
+            data-lg-stick-up="true"
+            data-xl-stick-up="true"
+            data-xxl-stick-up="true"
+          >
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button
+                    class="rd-navbar-toggle"
+                    data-rd-navbar-toggle=".rd-navbar-nav-wrap"
+                  >
+                    <span></span>
+                  </button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand">
+                    <a class="brand" href="">
+                      <img
+                        class="brand-logo-dark"
+                        src="images/logo-white.svg"
+                        alt=""
+                        width="200"
+                        height="23"
+                      />
+                      <img
+                        class="brand-logo-light"
+                        src="images/logo-white.svg"
+                        alt=""
+                        width="200"
+                        height="23"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item active">
+                        <a class="rd-nav-link" href="index.html#home">Home</a>
+                      </li>
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="index.html#about">About</a>
+                      </li>
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="index.html#team">Team</a>
+                      </li>
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="index.html#testimonials"
+                          >Testimonials</a
+                        >
+                      </li>
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="index.html#gallery"
+                          >Gallery</a
+                        >
+                      </li>
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="index.html#contacts"
+                          >Contacts</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- Swiper-->
+      <section
+        class="section swiper-container swiper-slider swiper-slider-2 swiper-bg"
+        id="home"
+        data-loop="true"
+        data-autoplay="5500"
+        data-simulate-touch="false"
+        data-slide-effect="fade"
+      >
+        <div class="swiper-img-block">
+          <div class="swiper-img-block-inner">
+            <img src="images/swiper-img.png" alt="" />
+          </div>
+        </div>
+        <div class="swiper-wrapper text-center text-md-left">
+          <div class="swiper-slide context-dark">
+            <div class="swiper-slide-caption">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-9 col-lg-7">
+                    <h1
+                      data-caption-animate="fadeInUp"
+                      data-caption-delay="100"
+                    >
+                      Softlabs<br />Innovative Solutions
+                    </h1>
+                    <div
+                      class="button-block"
+                      data-caption-animate="fadeInUp"
+                      data-caption-delay="150"
+                    >
+                      <a
+                        class="button button-lg button-gradient"
+                        href="index.html#"
+                        ><span>Learn More</span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide context-dark">
+            <div class="swiper-slide-caption">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-9 col-lg-7">
+                    <h1
+                      data-caption-animate="fadeInUp"
+                      data-caption-delay="100"
+                    >
+                      Providing Reliable <br />Software
+                    </h1>
+                    <div
+                      class="button-block"
+                      data-caption-animate="fadeInUp"
+                      data-caption-delay="150"
+                    >
+                      <a
+                        class="button button-lg button-gradient"
+                        href="index.html#"
+                        ><span>Learn More</span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide context-dark">
+            <div class="swiper-slide-caption">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-9 col-lg-7">
+                    <h1
+                      data-caption-animate="fadeInUp"
+                      data-caption-delay="100"
+                    >
+                      Experienced Team of Developers
+                    </h1>
+                    <div
+                      class="button-block"
+                      data-caption-animate="fadeInUp"
+                      data-caption-delay="150"
+                    >
+                      <a
+                        class="button button-lg button-gradient"
+                        href="index.html#"
+                        ><span>Learn More</span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-meta">
+          <ul class="links">
+            <li>
+              <a class="icon icon-meta mdi mdi-facebook" href="index.html#"></a>
+            </li>
+            <li>
+              <a class="icon icon-meta mdi mdi-twitter" href="index.html#"></a>
+            </li>
+            <li>
+              <a
+                class="icon icon-meta mdi mdi-instagram"
+                href="index.html#"
+              ></a>
+            </li>
+            <li>
+              <a
+                class="icon icon-meta mdi mdi-facebook-messenger"
+                href="index.html#"
+              ></a>
+            </li>
+            <li>
+              <a class="icon icon-meta mdi mdi-linkedin" href="index.html#"></a>
+            </li>
+            <li>
+              <a class="icon icon-meta mdi mdi-snapchat" href="index.html#"></a>
+            </li>
+          </ul>
+          <div class="contacts">
+            <div class="icon mdi mdi-cellphone-iphone"></div>
+            <div class="tel"><a href="tel:#">1-800-1234-567</a></div>
+            <div class="request">
+              <a href="index.html#modal" data-toggle="modal"
+                >Request a Call Back</a
+              >
+            </div>
+          </div>
+          <!-- Swiper Pagination-->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- Advantages-->
+      <section class="section context-dark">
+        <div class="row row-flex no-gutters">
+          <div class="col-md-6 col-lg-3">
+            <div class="blurb-boxed-2">
+              <div class="icon mdi mdi-responsive"></div>
+              <h6 class="title">Mobile and Desktop Apps</h6>
+              <p class="exeption">
+                Our company delivers various types of mobile and desktop
+                software as well as custom solutions for businesses.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="blurb-boxed-2 blurb-boxed-dark">
+              <div class="icon mdi mdi-star-outline"></div>
+              <h6 class="title">Corporate Solutions</h6>
+              <p class="exeption">
+                Need specific software for your company? Our team is ready to
+                design and develop it for you!
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="blurb-boxed-2 blurb-boxed-darker">
+              <div class="icon mdi mdi-headset"></div>
+              <h6 class="title">24/7 Support</h6>
+              <p class="exeption">
+                We also provide full 24/7 client support. In case you have a
+                problem with our apps, feel free to contact us anytime.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="blurb-boxed-2 blurb-boxed-darkest">
+              <p class="exeption">Reliable Apps Since 2005</p>
+              <h5 class="title">
+                We Can Design an App of Any Complexity for Your Company
+              </h5>
+              <a class="button button-lg button-gradient" href="index.html#"
+                ><span>Get a Quote</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- The Best Banking Choise-->
+      <section class="section section-lg section-decorate">
+        <div class="container">
+          <div class="block-lg text-center">
+            <h2>Why Choose Us</h2>
+            <p>
+              Our clients have been choosing Softlabs for a number of reasons
+              including reliability, latest technologies, and constant updates &
+              support. Read more about other advantages below.
+            </p>
+          </div>
+          <div class="row row-30 row-xxl-60">
+            <div class="col-sm-6 col-md-4 wow fadeInLeft">
+              <div class="blurb-image">
+                <div class="icon mercury-icon-time"></div>
+                <h6 class="title">Quick Results</h6>
+                <p class="exeption">
+                  We work quickly and efficiently to provide the best results.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 wow fadeInLeft" data-wow-delay="0.1s">
+              <div class="blurb-image">
+                <div class="icon mercury-icon-touch"></div>
+                <h6 class="title">Powerful Apps</h6>
+                <p class="exeption">
+                  Our team offers a wide variety of powerful and sustainable
+                  apps.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="blurb-image">
+                <div class="icon mercury-icon-money-3"></div>
+                <h6 class="title">Money Saving</h6>
+                <p class="exeption">
+                  Our products cost less than their analogs by other companies.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 wow fadeInLeft" data-wow-delay="0.1s">
+              <div class="blurb-image">
+                <div class="icon mercury-icon-phone-24"></div>
+                <h6 class="title">Efficient Support</h6>
+                <p class="exeption">
+                  Softlabs offers extensive support to its customers all over
+                  the world.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="blurb-image">
+                <div class="icon mercury-icon-lightbulb-gears"></div>
+                <h6 class="title">Innovative Technologies</h6>
+                <p class="exeption">
+                  Our developers use the latest technologies to deliver the best
+                  apps.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 wow fadeInLeft" data-wow-delay="0.3s">
+              <div class="blurb-image">
+                <div class="icon mercury-icon-pointer"></div>
+                <h6 class="title">Great Usability</h6>
+                <p class="exeption">
+                  Improved usability and UX are distinctive features of our
+                  products.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- A Few Words About Our Bank-->
+      <section class="section section-lg bg-gray-100" id="about">
+        <div class="container">
+          <div class="block-lg text-center">
+            <h2>A Few Words About Us</h2>
+            <p>
+              Our company provides custom software development services to
+              individual clients, start-ups, medium businesses, and large
+              enterprises. You can find out more about who we are and what we do
+              below.
+            </p>
+          </div>
+          <div
+            class="row row-20 justify-content-center justify-content-lg-between"
+          >
+            <div class="col-md-10 col-lg-6 col-xl-7 wow fadeIn">
+              <img
+                src="images/index-1-657x400.png"
+                alt=""
+                width="657"
+                height="400"
+              />
+            </div>
+            <div class="col-md-10 col-lg-6 col-xl-5">
+              <div class="text-block-2">
+                <p>
+                  Softlabs offers software development solutions to business
+                  owners as well as indvidual clients. Being fully equipped with
+                  the latest technologies, we deliver futuristic software
+                  solutions to clients globally. We employ a skilled team of UI
+                  designers and app developers who are totally focused on
+                  delivering high-quality software solutions, which enable our
+                  customers to achieve their critical IT objectives.
+                </p>
+                <div class="progress-linear-wrap">
+                  <!-- Linear progress bar-->
+                  <article class="progress-linear">
+                    <div class="progress-header">
+                      <p>UI Design</p>
+                      <span class="progress-value">75</span>
+                    </div>
+                    <div class="progress-bar-linear-wrap">
+                      <div class="progress-bar-linear"></div>
+                    </div>
+                  </article>
+                  <!-- Linear progress bar-->
+                  <article class="progress-linear">
+                    <div class="progress-header">
+                      <p>Software Development</p>
+                      <span class="progress-value">50</span>
+                    </div>
+                    <div class="progress-bar-linear-wrap">
+                      <div class="progress-bar-linear"></div>
+                    </div>
+                  </article>
+                </div>
+                <a class="button button-lg button-gradient" href="index.html#"
+                  ><span>More Details</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Financial Statistics-->
+      <section class="section section-lg bg-primary-dark">
+        <div class="container">
+          <h2 class="text-center">Statistics</h2>
+          <div
+            class="row row-20 justify-content-center justify-content-lg-between"
+          >
+            <div class="col-md-12 col-lg-4 wow fadeIn">
+              <blockquote class="quote quote-default">
+                <div class="quote-icon mdi mdi-format-quote"></div>
+                <div class="quote-body">
+                  <q class="heading-6"
+                    >At Softlabs, we aim to provide top quality software
+                    development services to a greater number of individual and
+                    corporate customers than any other company in the USA or
+                    abroad. Our apps help our clients grow professionally and
+                    personally.</q
+                  >
+                </div>
+                <div class="quote-meta">
+                  <div class="author">
+                    <cite>Samuel Chapman</cite>
+                  </div>
+                  <div class="position">CEO &amp; Founder of Softlabs</div>
+                </div>
+              </blockquote>
+            </div>
+            <div class="col-md-8 col-lg-5 col-xxl-4 wow fadeIn">
+              <!-- gradient blocks-->
+              <!-- gradient primary-->
+              <svg class="svg-hidden">
+                <!-- gradient-->
+                <lineargradient
+                  id="linear-gradient-primary"
+                  x1="50%"
+                  y1="30%"
+                  x2="50%"
+                  y2="100%"
+                >
+                  <stop offset="0%" stop-color="#ffea00"></stop>
+                  <stop offset="100%" stop-color="#cf00af"></stop>
+                </lineargradient>
+              </svg>
+              <!-- gradient secondary-->
+              <svg class="svg-hidden">
+                <!-- gradient-->
+                <lineargradient
+                  id="linear-gradient-secondary"
+                  x1="50%"
+                  y1="30%"
+                  x2="50%"
+                  y2="100%"
+                >
+                  <stop offset="0%" stop-color="rgba(107,121,189, .16)"></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="rgba(201,210,255, .16)"
+                  ></stop>
+                </lineargradient>
+              </svg>
+              <div
+                class="d3-chart"
+                id="spline-chart"
+                style="width: 100%; margin: 0 auto"
+              ></div>
+              <p>
+                With the development of online and mobile apps, our number of
+                clients has increased significantly.
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xxl-2">
+              <div class="row row-fix row-40">
+                <div class="col-6 col-md-12">
+                  <div class="progress-bar-circle-wrap text-center">
+                    <div
+                      class="progress-bar-circle"
+                      data-value="0.5"
+                      data-gradient="#cf00af, #ffea00"
+                      data-empty-fill="rgba(139,77,219, .5)"
+                      data-size="100"
+                      data-thickness="2"
+                    >
+                      <span></span>
+                    </div>
+                    <p class="progress-bar-circle-title">Innovations</p>
+                  </div>
+                </div>
+                <div class="col-6 col-md-12">
+                  <div class="progress-bar-circle-wrap text-center">
+                    <div
+                      class="progress-bar-circle"
+                      data-value="1"
+                      data-gradient="#cf00af, #ffea00"
+                      data-empty-fill="rgba(139,77,219, .5)"
+                      data-size="100"
+                      data-thickness="2"
+                    >
+                      <span></span>
+                    </div>
+                    <p class="progress-bar-circle-title">Results</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our Team-->
+      <section class="section section-lg" id="team">
+        <div class="container text-center">
+          <h2>Our Team</h2>
+          <!-- Owl Carousel-->
+          <div
+            class="owl-carousel text-left"
+            data-items="1"
+            data-sm-items="2"
+            data-lg-items="3"
+            data-xl-items="4"
+            data-dots="true"
+            data-nav="false"
+            data-stage-padding="15"
+            data-loop="false"
+            data-margin="30"
+            data-mouse-drag="false"
+          >
+            <div class="thumbnail-1">
+              <div class="media-wrap">
+                <img
+                  src="images/team-1-270x270.jpg"
+                  alt=""
+                  width="270"
+                  height="270"
+                />
+              </div>
+              <div class="title"><a href="index.html#">Samuel Chapman</a></div>
+              <div class="position">CEO &amp; Founder</div>
+              <p class="exeption">
+                Samuel is an IT leader running multiple enterprises for over 10
+                years. Seeing the bigger picture is his everyday CEO routine.
+              </p>
+              <div class="group group-middle social-items">
+                <a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-facebook"
+                  href="index.html#"
+                ></a
+                ><a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-twitter"
+                  href="index.html#"
+                ></a
+                ><a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-instagram"
+                  href="index.html#"
+                ></a
+                ><a
+                  class="
+                    icon icon-md icon-gray-400
+                    novi-icon
+                    mdi mdi-facebook-messenger
+                  "
+                  href="index.html#"
+                ></a
+                ><a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-linkedin"
+                  href="index.html#"
+                ></a
+                ><a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-snapchat"
+                  href="index.html#"
+                ></a>
+              </div>
+            </div>
+            <div class="thumbnail-1">
+              <div class="media-wrap">
+                <img
+                  src="images/team-2-270x270.jpg"
+                  alt=""
+                  width="270"
+                  height="270"
+                />
+              </div>
+              <div class="title"><a href="index.html#">Stephen Rose</a></div>
+              <div class="position">Senior Developer</div>
+              <p class="exeption">
+                Stephen is one of our Senior Developers who has over 10 years of
+                experience in C#, C++, iOS and Android development.
+              </p>
+              <div class="group group-middle social-items">
+                <a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-facebook"
+                  href="index.html#"
+                ></a
+                ><a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-twitter"
+                  href="index.html#"
+                ></a
+                ><a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-instagram"
+                  href="index.html#"
+                ></a
+                ><a
+                  class="
+                    icon icon-md icon-gray-400
+                    novi-icon
+                    mdi mdi-facebook-messenger
+                  "
+                  href="index.html#"
+                ></a
+                ><a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-linkedin"
+                  href="index.html#"
+                ></a
+                ><a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-snapchat"
+                  href="index.html#"
+                ></a>
+              </div>
+            </div>
+            <div class="thumbnail-1">
+              <div class="media-wrap">
+                <img
+                  src="images/team-3-270x270.jpg"
+                  alt=""
+                  width="270"
+                  height="270"
+                />
+              </div>
+              <div class="title">
+                <a href="index.html#">Deborah Mitchell</a>
+              </div>
+              <div class="position">HR Manager</div>
+              <p class="exeption">
+                Deborah is the heart of our HR department. She interviews new
+                employees and manages the work of human resources.
+              </p>
+              <div class="group group-middle social-items">
+                <a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-facebook"
+                  href="index.html#"
+                ></a
+                ><a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-twitter"
+                  href="index.html#"
+                ></a
+                ><a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-instagram"
+                  href="index.html#"
+                ></a
+                ><a
+                  class="
+                    icon icon-md icon-gray-400
+                    novi-icon
+                    mdi mdi-facebook-messenger
+                  "
+                  href="index.html#"
+                ></a
+                ><a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-linkedin"
+                  href="index.html#"
+                ></a
+                ><a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-snapchat"
+                  href="index.html#"
+                ></a>
+              </div>
+            </div>
+            <div class="thumbnail-1">
+              <div class="media-wrap">
+                <img
+                  src="images/team-4-270x270.jpg"
+                  alt=""
+                  width="270"
+                  height="270"
+                />
+              </div>
+              <div class="title"><a href="index.html#">Danielle Gray</a></div>
+              <div class="position">UI Designer</div>
+              <p class="exeption">
+                Improved usability and better interfaces are what Danielle
+                specializes in. She has over 5 years of experience in UI and UX
+                design.
+              </p>
+              <div class="group group-middle social-items">
+                <a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-facebook"
+                  href="index.html#"
+                ></a
+                ><a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-twitter"
+                  href="index.html#"
+                ></a
+                ><a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-instagram"
+                  href="index.html#"
+                ></a
+                ><a
+                  class="
+                    icon icon-md icon-gray-400
+                    novi-icon
+                    mdi mdi-facebook-messenger
+                  "
+                  href="index.html#"
+                ></a
+                ><a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-linkedin"
+                  href="index.html#"
+                ></a
+                ><a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-snapchat"
+                  href="index.html#"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonials-->
+      <section class="section section-lg bg-gray-100" id="testimonials">
+        <div class="container text-center">
+          <h2>Testimonials</h2>
+          <!-- Owl Carousel-->
+          <div
+            class="owl-carousel text-left"
+            data-items="1"
+            data-md-items="2"
+            data-dots="true"
+            data-nav="false"
+            data-stage-padding="0"
+            data-loop="true"
+            data-margin="30"
+            data-mouse-drag="false"
+            data-autoplay="true"
+          >
+            <blockquote class="quote quote-boxed">
+              <div class="quote-meta">
+                <ul class="list-icons">
+                  <li>
+                    <div class="icon mdi mdi-star"></div>
+                  </li>
+                  <li>
+                    <div class="icon mdi mdi-star"></div>
+                  </li>
+                  <li>
+                    <div class="icon mdi mdi-star"></div>
+                  </li>
+                  <li>
+                    <div class="icon mdi mdi-star"></div>
+                  </li>
+                  <li>
+                    <div class="icon mdi mdi-star-half"></div>
+                  </li>
+                </ul>
+                <div class="time">2 days ago</div>
+              </div>
+              <q
+                >Softlabs is an innovative and professional company that has
+                provided us with valuable software development services. We are
+                very happy with our decision to cooperate with them.</q
+              >
+              <div class="quote-author">
+                <div class="author-media">
+                  <img
+                    src="images/user-1-64x64.jpg"
+                    alt=""
+                    width="64"
+                    height="64"
+                  />
+                </div>
+                <div class="author-body">
+                  <div class="author">
+                    <cite>Marie Hanson</cite>
+                  </div>
+                  <div class="position">Regular Client</div>
+                </div>
+              </div>
+            </blockquote>
+            <blockquote class="quote quote-boxed">
+              <div class="quote-meta">
+                <ul class="list-icons">
+                  <li>
+                    <div class="icon mdi mdi-star"></div>
+                  </li>
+                  <li>
+                    <div class="icon mdi mdi-star"></div>
+                  </li>
+                  <li>
+                    <div class="icon mdi mdi-star"></div>
+                  </li>
+                  <li>
+                    <div class="icon mdi mdi-star"></div>
+                  </li>
+                  <li>
+                    <div class="icon mdi mdi-star-half"></div>
+                  </li>
+                </ul>
+                <div class="time">2 days ago</div>
+              </div>
+              <q
+                >Our company has great respect for the technical and management
+                capabilities of Softlabs, whose people are highly competent,
+                easy to work with and have delivered results that proved to be
+                useful.</q
+              >
+              <div class="quote-author">
+                <div class="author-media">
+                  <img
+                    src="images/user-2-64x64.jpg"
+                    alt=""
+                    width="64"
+                    height="64"
+                  />
+                </div>
+                <div class="author-body">
+                  <div class="author">
+                    <cite>Mildred Bates</cite>
+                  </div>
+                  <div class="position">Regular Client</div>
+                </div>
+              </div>
+            </blockquote>
+            <blockquote class="quote quote-boxed">
+              <div class="quote-meta">
+                <ul class="list-icons">
+                  <li>
+                    <div class="icon mdi mdi-star"></div>
+                  </li>
+                  <li>
+                    <div class="icon mdi mdi-star"></div>
+                  </li>
+                  <li>
+                    <div class="icon mdi mdi-star"></div>
+                  </li>
+                  <li>
+                    <div class="icon mdi mdi-star"></div>
+                  </li>
+                  <li>
+                    <div class="icon mdi mdi-star-half"></div>
+                  </li>
+                </ul>
+                <div class="time">2 days ago</div>
+              </div>
+              <q
+                >Softlabs is an innovative and professional company that has
+                provided us with valuable software development services. We are
+                very happy with our decision to cooperate with them.</q
+              >
+              <div class="quote-author">
+                <div class="author-media">
+                  <img
+                    src="images/user-1-64x64.jpg"
+                    alt=""
+                    width="64"
+                    height="64"
+                  />
+                </div>
+                <div class="author-body">
+                  <div class="author">
+                    <cite>Marie Hanson</cite>
+                  </div>
+                  <div class="position">Regular Client</div>
+                </div>
+              </div>
+            </blockquote>
+            <blockquote class="quote quote-boxed">
+              <div class="quote-meta">
+                <ul class="list-icons">
+                  <li>
+                    <div class="icon mdi mdi-star"></div>
+                  </li>
+                  <li>
+                    <div class="icon mdi mdi-star"></div>
+                  </li>
+                  <li>
+                    <div class="icon mdi mdi-star"></div>
+                  </li>
+                  <li>
+                    <div class="icon mdi mdi-star"></div>
+                  </li>
+                  <li>
+                    <div class="icon mdi mdi-star-half"></div>
+                  </li>
+                </ul>
+                <div class="time">2 days ago</div>
+              </div>
+              <q
+                >Our company has great respect for the technical and management
+                capabilities of Softlabs, whose people are highly competent,
+                easy to work with and have delivered results that proved to be
+                useful.</q
+              >
+              <div class="quote-author">
+                <div class="author-media">
+                  <img
+                    src="images/user-2-64x64.jpg"
+                    alt=""
+                    width="64"
+                    height="64"
+                  />
+                </div>
+                <div class="author-body">
+                  <div class="author">
+                    <cite>Mildred Bates</cite>
+                  </div>
+                  <div class="position">Regular Client</div>
+                </div>
+              </div>
+            </blockquote>
+            <blockquote class="quote quote-boxed">
+              <div class="quote-meta">
+                <ul class="list-icons">
+                  <li>
+                    <div class="icon mdi mdi-star"></div>
+                  </li>
+                  <li>
+                    <div class="icon mdi mdi-star"></div>
+                  </li>
+                  <li>
+                    <div class="icon mdi mdi-star"></div>
+                  </li>
+                  <li>
+                    <div class="icon mdi mdi-star"></div>
+                  </li>
+                  <li>
+                    <div class="icon mdi mdi-star-half"></div>
+                  </li>
+                </ul>
+                <div class="time">2 days ago</div>
+              </div>
+              <q
+                >Softlabs is an innovative and professional company that has
+                provided us with valuable software development services. We are
+                very happy with our decision to cooperate with them.</q
+              >
+              <div class="quote-author">
+                <div class="author-media">
+                  <img
+                    src="images/user-1-64x64.jpg"
+                    alt=""
+                    width="64"
+                    height="64"
+                  />
+                </div>
+                <div class="author-body">
+                  <div class="author">
+                    <cite>Marie Hanson</cite>
+                  </div>
+                  <div class="position">Regular Client</div>
+                </div>
+              </div>
+            </blockquote>
+            <blockquote class="quote quote-boxed">
+              <div class="quote-meta">
+                <ul class="list-icons">
+                  <li>
+                    <div class="icon mdi mdi-star"></div>
+                  </li>
+                  <li>
+                    <div class="icon mdi mdi-star"></div>
+                  </li>
+                  <li>
+                    <div class="icon mdi mdi-star"></div>
+                  </li>
+                  <li>
+                    <div class="icon mdi mdi-star"></div>
+                  </li>
+                  <li>
+                    <div class="icon mdi mdi-star-half"></div>
+                  </li>
+                </ul>
+                <div class="time">2 days ago</div>
+              </div>
+              <q
+                >Our company has great respect for the technical and management
+                capabilities of Softlabs, whose people are highly competent,
+                easy to work with and have delivered results that proved to be
+                useful.</q
+              >
+              <div class="quote-author">
+                <div class="author-media">
+                  <img
+                    src="images/user-2-64x64.jpg"
+                    alt=""
+                    width="64"
+                    height="64"
+                  />
+                </div>
+                <div class="author-body">
+                  <div class="author">
+                    <cite>Mildred Bates</cite>
+                  </div>
+                  <div class="position">Regular Client</div>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+      <!-- How to Order a New Card-->
+      <section class="section section-lg section-decorate section-decorate-1">
+        <div class="container text-center">
+          <h2>Our Values</h2>
+          <div class="row row-40 justify-content-center number-counter">
+            <div class="col-sm-6 col-lg-3 wow fadeInLeft">
+              <div class="blurb-icon-fill">
+                <div class="icon mercury-icon-user">
+                  <span class="index-counter"></span>
+                </div>
+                <h5 class="title">Customer Focus</h5>
+                <p class="exeption">
+                  Customers are our #1 priority and we focus on what they need
+                  in every project we work on.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 wow fadeInLeft" data-wow-delay="0.1s">
+              <div class="blurb-icon-fill">
+                <div class="icon mercury-icon-gear">
+                  <span class="index-counter"></span>
+                </div>
+                <h5 class="title">Employee Empowerment</h5>
+                <p class="exeption">
+                  We empower our employees with necessary tools and resources to
+                  develop the best apps.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="blurb-icon-fill">
+                <div class="icon mercury-icon-target-2">
+                  <span class="index-counter"></span>
+                </div>
+                <h5 class="title">Open &amp; Honest</h5>
+                <p class="exeption">
+                  Softlabs is an open and highly honest team of developers who
+                  know what our clients need.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 wow fadeInLeft" data-wow-delay="0.3s">
+              <div class="blurb-icon-fill">
+                <div class="icon mercury-icon-lightbulb-gears">
+                  <span class="index-counter"></span>
+                </div>
+                <h5 class="title">Innovative Ideas</h5>
+                <p class="exeption">
+                  Our products are based on innovative and creative ideas
+                  delivered by our team.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Call to action-->
+      <section class="section section-xs bg-primary">
+        <div class="container">
+          <div class="box-cta">
+            <div class="box-cta-inner">
+              <h3>Highly Configurable Products</h3>
+            </div>
+            <div class="box-cta-inner">
+              <a class="button button-lg button-primary" href="index.html#"
+                >Learn more
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Gallery-->
+      <section class="section section-lg bg-gray-100" id="gallery">
+        <div class="container text-center">
+          <h2>Gallery</h2>
+          <div class="row">
+            <!-- Isotope Content-->
+            <div class="col-lg-12 text-left">
+              <div
+                class="isotope"
+                data-isotope-layout="fitRows"
+                data-isotope-group="gallery"
+                data-lightgallery="group"
+              >
+                <div class="row">
+                  <div class="col-sm-6 col-lg-4 isotope-item" data-filter="*">
+                    <a
+                      class="gallery-item"
+                      data-lightgallery="item"
+                      href="https://livedemo00.template-help.com/wt_prod-22314/images/gallery-original-1-1200x600.jpg"
+                      ><img
+                        src="https://livedemo00.template-help.com/wt_prod-22314/images/grid-gallery-1-370x248.jpg"
+                        alt=""
+                        width="370"
+                        height="248"
+                      />
+                      <div class="gallery-item-content">
+                        <div class="heading-5 title">Mobile Apps</div>
+                        <div class="exeption">
+                          Softlabs offers its clients high-quality software
+                          development services.
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div
+                    class="col-sm-6 col-lg-4 isotope-item"
+                    data-filter="Category 3"
+                  >
+                    <a
+                      class="gallery-item"
+                      data-lightgallery="item"
+                      href="https://livedemo00.template-help.com/wt_prod-22314/images/gallery-original-2-1200x600.jpg"
+                      ><img
+                        src="https://livedemo00.template-help.com/wt_prod-22314/images/grid-gallery-2-370x248.jpg"
+                        alt=""
+                        width="370"
+                        height="248"
+                      />
+                      <div class="gallery-item-content">
+                        <div class="heading-5 title">iOS Apps</div>
+                        <div class="exeption">
+                          Softlabs offers its clients high-quality software
+                          development services.
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div
+                    class="col-sm-6 col-lg-4 isotope-item"
+                    data-filter="Category 3"
+                  >
+                    <a
+                      class="gallery-item"
+                      data-lightgallery="item"
+                      href="https://livedemo00.template-help.com/wt_prod-22314/images/gallery-original-3-1200x600.jpg"
+                      ><img
+                        src="https://livedemo00.template-help.com/wt_prod-22314/images/grid-gallery-3-370x248.jpg"
+                        alt=""
+                        width="370"
+                        height="248"
+                      />
+                      <div class="gallery-item-content">
+                        <div class="heading-5 title">Custom Software</div>
+                        <div class="exeption">
+                          Softlabs offers its clients high-quality software
+                          development services.
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div
+                    class="col-sm-6 col-lg-4 isotope-item"
+                    data-filter="Category 3"
+                  >
+                    <a
+                      class="gallery-item"
+                      data-lightgallery="item"
+                      href="https://livedemo00.template-help.com/wt_prod-22314/images/gallery-original-4-1200x600.jpg"
+                      ><img
+                        src="https://livedemo00.template-help.com/wt_prod-22314/images/grid-gallery-4-370x248.jpg"
+                        alt=""
+                        width="370"
+                        height="248"
+                      />
+                      <div class="gallery-item-content">
+                        <div class="heading-5 title">Android Apps</div>
+                        <div class="exeption">
+                          Softlabs offers its clients high-quality software
+                          development services.
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div
+                    class="col-sm-6 col-lg-4 isotope-item"
+                    data-filter="Category 2"
+                  >
+                    <a
+                      class="gallery-item"
+                      data-lightgallery="item"
+                      href="https://livedemo00.template-help.com/wt_prod-22314/images/gallery-original-5-1200x600.jpg"
+                      ><img
+                        src="https://livedemo00.template-help.com/wt_prod-22314/images/grid-gallery-5-370x248.jpg"
+                        alt=""
+                        width="370"
+                        height="248"
+                      />
+                      <div class="gallery-item-content">
+                        <div class="heading-5 title">Mac Apps</div>
+                        <div class="exeption">
+                          Softlabs offers its clients high-quality software
+                          development services.
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div
+                    class="col-sm-6 col-lg-4 isotope-item"
+                    data-filter="Category 2"
+                  >
+                    <a
+                      class="gallery-item"
+                      data-lightgallery="item"
+                      href="https://livedemo00.template-help.com/wt_prod-22314/images/gallery-original-6-1200x600.jpg"
+                      ><img
+                        src="https://livedemo00.template-help.com/wt_prod-22314/images/grid-gallery-6-370x248.jpg"
+                        alt=""
+                        width="370"
+                        height="248"
+                      />
+                      <div class="gallery-item-content">
+                        <div class="heading-5 title">Software Updates</div>
+                        <div class="exeption">
+                          Softlabs offers its clients high-quality software
+                          development services.
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div
+                    class="col-sm-6 col-lg-4 isotope-item"
+                    data-filter="Category 1"
+                  >
+                    <a
+                      class="gallery-item"
+                      data-lightgallery="item"
+                      href="https://livedemo00.template-help.com/wt_prod-22314/images/gallery-original-7-1200x600.jpg"
+                      ><img
+                        src="https://livedemo00.template-help.com/wt_prod-22314/images/grid-gallery-7-370x248.jpg"
+                        alt=""
+                        width="370"
+                        height="248"
+                      />
+                      <div class="gallery-item-content">
+                        <div class="heading-5 title">Windows Applications</div>
+                        <div class="exeption">
+                          Softlabs offers its clients high-quality software
+                          development services.
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div
+                    class="col-sm-6 col-lg-4 isotope-item"
+                    data-filter="Category 1"
+                  >
+                    <a
+                      class="gallery-item"
+                      data-lightgallery="item"
+                      href="https://livedemo00.template-help.com/wt_prod-22314/images/gallery-original-8-1200x600.jpg"
+                      ><img
+                        src="https://livedemo00.template-help.com/wt_prod-22314/images/grid-gallery-8-370x248.jpg"
+                        alt=""
+                        width="370"
+                        height="248"
+                      />
+                      <div class="gallery-item-content">
+                        <div class="heading-5 title">
+                          Outsourced Development
+                        </div>
+                        <div class="exeption">
+                          Softlabs offers its clients high-quality software
+                          development services.
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div
+                    class="col-sm-6 col-lg-4 isotope-item"
+                    data-filter="Category 1"
+                  >
+                    <a
+                      class="gallery-item"
+                      data-lightgallery="item"
+                      href="https://livedemo00.template-help.com/wt_prod-22314/images/gallery-original-9-1200x600.jpg"
+                      ><img
+                        src="https://livedemo00.template-help.com/wt_prod-22314/images/grid-gallery-9-370x248.jpg"
+                        alt=""
+                        width="370"
+                        height="248"
+                      />
+                      <div class="gallery-item-content">
+                        <div class="heading-5 title">
+                          UI Design &amp; Development
+                        </div>
+                        <div class="exeption">
+                          Softlabs offers its clients high-quality software
+                          development services.
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Frequently Asked Questions-->
+      <section class="section section-lg">
+        <div class="container text-center">
+          <h2>Frequently Asked Questions</h2>
+          <div class="row row-flex row-40 number-counter text-left">
+            <div class="col-sm-12 col-lg-4 wow fadeIn">
+              <div class="text-block-lined">
+                <h5 class="title">
+                  Do you provide any scripts with your templates?
+                </h5>
+                <p>
+                  Our templates do not include any additional scripts.
+                  Newsletter subscriptions, search fields, forums, image
+                  galleries (in HTML versions of Flash products) are inactive.
+                  Basic scripts can be easily added at www.zemez.io If you are
+                  not sure that the element you’re interested in is active
+                  please contact our Support.
+                </p>
+                <h5 class="title">
+                  In what formats are your templates available?
+                </h5>
+                <p>
+                  Website templates are available in Photoshop and HTML formats.
+                  Fonts are included with the Photoshop file.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-4 wow fadeIn">
+              <div class="text-block-lined">
+                <h5 class="title">
+                  What payment methods can I use to pay for my order?
+                </h5>
+                <p>
+                  We accept Visa, MasterCard, and American Express credit and
+                  debit cards for your convenience. Some other payment methods
+                  are also available.
+                </p>
+                <h5 class="title">
+                  What are the advantages of purchasing a website template?
+                </h5>
+                <p>
+                  The major advantage is price: You get a high quality design
+                  for just $20-$70. You don’t have to hire a web designer or web
+                  design studio. Second advantage is time frame: It usually
+                  takes 5-15 days for a good designer to produce a web page of
+                  such quality regardless of its purpose.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-4 wow fadeIn">
+              <div class="text-block-lined">
+                <h5 class="title">
+                  What am I allowed to do with the templates?
+                </h5>
+                <p>
+                  You may build a website using the template in any way you
+                  like. You may not resell or redistribute templates (like we
+                  do); claim intellectual or exclusive ownership to any of our
+                  products.
+                </p>
+                <h5 class="title">
+                  What do I receive when I order a template from Zemez?
+                </h5>
+                <p>
+                  After you complete the payment via our secure form you will
+                  receive the instructions for downloading the product. The
+                  source files in the download package can vary based on the
+                  type of the product you have purchased.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-wrap-lg">
+            <a class="button button-lg button-gradient" href="index.html#"
+              ><span>View All Questions</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- Latest Blog Posts-->
+      <section class="section section-lg bg-gray-100">
+        <div class="container text-center">
+          <h2>Latest Blog Posts</h2>
+          <div
+            class="
+              row row-flex row-40
+              justify-content-center
+              number-counter
+              text-left
+              wow
+              fadeInUp
+            "
+          >
+            <div class="col-sm-6 col-lg-3">
+              <article class="post-classic-2">
+                <a class="media-wrapper" href="index.html#"
+                  ><img
+                    src="https://livedemo00.template-help.com/wt_prod-22314/images/masonry-blog-1-270x176.jpg"
+                    alt=""
+                    width="270"
+                    height="176"
+                /></a>
+                <div class="post-meta-main">
+                  <div class="post-meta-item">
+                    <ul class="list-tags">
+                      <li><a class="tag" href="index.html#">News</a></li>
+                    </ul>
+                  </div>
+                  <div class="post-meta-item">
+                    <div class="post-author">
+                      <span>by</span> <a href="index.html#">Martha Ryan</a>
+                    </div>
+                  </div>
+                </div>
+                <h6 class="post-title">
+                  <a href="index.html#"
+                    >Undertaking Custom Software Development</a
+                  >
+                </h6>
+                <p class="post-exeption">
+                  When your business needs custom software development, it may
+                  be tempting to turn the project over to in-house IT but you
+                  may want to...
+                </p>
+                <div class="post-date">2 days ago</div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="post-classic-2">
+                <a class="media-wrapper" href="index.html#"
+                  ><img
+                    src="https://livedemo00.template-help.com/wt_prod-22314/images/masonry-blog-2-270x176.jpg"
+                    alt=""
+                    width="270"
+                    height="176"
+                /></a>
+                <div class="post-meta-main">
+                  <div class="post-meta-item">
+                    <ul class="list-tags">
+                      <li><a class="tag" href="index.html#">News</a></li>
+                    </ul>
+                  </div>
+                  <div class="post-meta-item">
+                    <div class="post-author">
+                      <span>by</span> <a href="index.html#">Lawrence Kelly</a>
+                    </div>
+                  </div>
+                </div>
+                <h6 class="post-title">
+                  <a href="index.html#"
+                    >Can Mobile Software Give Your Business an Advantage Your
+                    Competitors Lack?</a
+                  >
+                </h6>
+                <p class="post-exeption">
+                  If you haven't employed the benefits of mobile business
+                  intelligence, you are tying the hands of your managers and
+                  business users. No matter how...
+                </p>
+                <div class="post-date">2 days ago</div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="post-classic-2">
+                <a class="media-wrapper" href="index.html#"
+                  ><img
+                    src="https://livedemo00.template-help.com/wt_prod-22314/images/masonry-blog-3-270x176.jpg"
+                    alt=""
+                    width="270"
+                    height="176"
+                /></a>
+                <div class="post-meta-main">
+                  <div class="post-meta-item">
+                    <ul class="list-tags">
+                      <li><a class="tag" href="index.html#">News</a></li>
+                    </ul>
+                  </div>
+                  <div class="post-meta-item">
+                    <div class="post-author">
+                      <span>by</span> <a href="index.html#">Theresa Simpson</a>
+                    </div>
+                  </div>
+                </div>
+                <h6 class="post-title">
+                  <a href="index.html#"
+                    >Choosing a Software Development Company</a
+                  >
+                </h6>
+                <p class="post-exeption">
+                  Choosing the right software development company for your
+                  product is like hiring a crew to build your new house. Triple
+                  check the contractor...
+                </p>
+                <div class="post-date">2 days ago</div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="post-classic-2">
+                <a class="media-wrapper" href="index.html#"
+                  ><img
+                    src="https://livedemo00.template-help.com/wt_prod-22314/images/masonry-blog-4-270x176.jpg"
+                    alt=""
+                    width="270"
+                    height="176"
+                /></a>
+                <div class="post-meta-main">
+                  <div class="post-meta-item">
+                    <ul class="list-tags">
+                      <li><a class="tag" href="index.html#">News</a></li>
+                    </ul>
+                  </div>
+                  <div class="post-meta-item">
+                    <div class="post-author">
+                      <span>by</span> <a href="index.html#">Lawrence Kelly</a>
+                    </div>
+                  </div>
+                </div>
+                <h6 class="post-title">
+                  <a href="index.html#"
+                    >What Skills Should You Test While Hiring a React Native
+                    Developer?</a
+                  >
+                </h6>
+                <p class="post-exeption">
+                  React Native is obviously a great mobile app development
+                  framework. It’s good if you have chosen React Native for
+                  building mobile apps, but...
+                </p>
+                <div class="post-date">2 days ago</div>
+              </article>
+            </div>
+          </div>
+          <div class="button-wrap-lg">
+            <a class="button button-lg button-gradient" href="index.html#"
+              ><span>View All Blog Posts</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- Pricing-->
+      <section class="section section-lg">
+        <div class="container text-center">
+          <h2>Pricing</h2>
+          <div class="row no-gutters justify-content-center">
+            <div class="col-md-4">
+              <div class="price-box-1 price-box-decor-top">
+                <div class="title">Silver</div>
+                <p class="exeption">
+                  This option is perfect if you need a simple app for your
+                  corporate or personal needs and don’t want to overpay for its
+                  development.
+                </p>
+                <div class="heading-3 price">$100.00/mo</div>
+                <a class="button button-lg button-gradient" href="index.html#"
+                  ><span>Buy Now</span></a
+                >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="price-box-1 price-box-1-primary">
+                <div class="title">Gold</div>
+                <p class="exeption">
+                  This offer provides you with extended support for your future
+                  application as well as fair pricing and more useful features
+                  for your app.
+                </p>
+                <div class="heading-3 price">$149.00/mo</div>
+                <a class="button button-lg button-gradient" href="index.html#"
+                  ><span>Buy Now</span></a
+                >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="price-box-1 price-box-decor-bottom">
+                <div class="title">Diamond</div>
+                <p class="exeption">
+                  Choose this plan if you need a powerful application for your
+                  business with lots of features, extended support, and full
+                  integration into your workflow.
+                </p>
+                <div class="heading-3 price">$199.00/mo</div>
+                <a class="button button-lg button-gradient" href="index.html#"
+                  ><span>Buy Now</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <hr />
+        </div>
+      </section>
+      <section class="section section-lg bg-default" id="contacts">
+        <div class="container">
+          <div class="row row-50 justify-content-between">
+            <div class="col-md-6 col-lg-4 col-xl-3">
+              <div>
+                <ul class="contact-box">
+                  <li>
+                    <div class="unit unit-horizontal unit-spacing-xxs">
+                      <div class="unit-left">
+                        <span class="icon mdi mdi-map-marker"></span>
+                      </div>
+                      <div class="unit-body">
+                        <a class="hover-text" href="index.html#"
+                          >2130 Fulton Street,
+                          <br class="veil reveal-lg-inline" />San Diego, CA
+                          94117-1080 USA</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="unit unit-horizontal unit-spacing-xxs">
+                      <div class="unit-left">
+                        <span class="icon mdi mdi-phone"></span>
+                      </div>
+                      <div class="unit-body">
+                        <ul class="list-phones">
+                          <li>
+                            <a class="hover-text" href="tel:#"
+                              >1-800-1234-567</a
+                            >
+                          </li>
+                          <li>
+                            <a class="hover-text" href="tel:#"
+                              >1-800-1234-567</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="unit unit-horizontal unit-spacing-xxs">
+                      <div class="unit-left">
+                        <span class="icon mdi mdi-email-outline"></span>
+                      </div>
+                      <div class="unit-body">
+                        <a class="hover-text" href="mailto:#"
+                          >info@demolink.org</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="group group-middle social-items">
+                <a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-facebook"
+                  href="index.html#"
+                ></a
+                ><a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-twitter"
+                  href="index.html#"
+                ></a
+                ><a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-instagram"
+                  href="index.html#"
+                ></a
+                ><a
+                  class="
+                    icon icon-md icon-gray-400
+                    novi-icon
+                    mdi mdi-facebook-messenger
+                  "
+                  href="index.html#"
+                ></a
+                ><a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-linkedin"
+                  href="index.html#"
+                ></a
+                ><a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-snapchat"
+                  href="index.html#"
+                ></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-8">
+              <h4>Get in Touch</h4>
+              <!-- RD Mailform-->
+              <form
+                class="rd-form rd-mailform"
+                data-form-output="form-output-global"
+                data-form-type="contact"
+                method="post"
+                action=""
+              >
+                <div class="form-wrap">
+                  <input
+                    class="form-input"
+                    id="contact-name"
+                    type="text"
+                    name="name"
+                    data-constraints="@Required"
+                  />
+                  <label class="form-label" for="contact-name">Name</label>
+                </div>
+                <div class="form-wrap">
+                  <input
+                    class="form-input"
+                    id="contact-email"
+                    type="email"
+                    name="email"
+                    data-constraints="@Email @Required"
+                  />
+                  <label class="form-label" for="contact-email">E-mail</label>
+                </div>
+                <div class="form-wrap">
+                  <label class="form-label" for="contact-message"
+                    >Message</label
+                  >
+                  <textarea
+                    class="form-input"
+                    id="contact-message"
+                    name="message"
+                    data-constraints="@Required"
+                  ></textarea>
+                </div>
+                <button class="button button-gradient" type="submit">
+                  <span>Send</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="mapid"></div>
+      <!-- Page Footer-->
+      <footer class="section footer-2">
+        <div class="container">
+          <div class="row row-40">
+            <div class="col-md-6 col-lg-3">
+              <a class="footer-logo" href=""
+                ><img
+                  src="images/logo-white.svg"
+                  alt=""
+                  width="199"
+                  height="42"
+              /></a>
+              <p>
+                Softlabs is an industry-leading software development company
+                building digital products that last. By being reasonable product
+                craftsmen, we're able to avoid surprises and focus on the
+                quality of the software we deliver.
+              </p>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <h5 class="title">Contact Information</h5>
+              <ul class="contact-box">
+                <li>
+                  <div class="unit unit-horizontal unit-spacing-xxs">
+                    <div class="unit-left">
+                      <span class="icon mdi mdi-map-marker"></span>
+                    </div>
+                    <div class="unit-body">
+                      <a href="index.html#"
+                        >2130 Fulton Street,
+                        <br class="veil reveal-lg-inline" />San Diego, CA
+                        94117-1080 USA</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="unit unit-horizontal unit-spacing-xxs">
+                    <div class="unit-left">
+                      <span class="icon mdi mdi-phone"></span>
+                    </div>
+                    <div class="unit-body">
+                      <ul class="list-phones">
+                        <li><a href="tel:#">1-800-1234-567</a></li>
+                        <li><a href="tel:#">1-800-1234-567</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="unit unit-horizontal unit-spacing-xxs">
+                    <div class="unit-left">
+                      <span class="icon mdi mdi-email-outline"></span>
+                    </div>
+                    <div class="unit-body">
+                      <a href="mailto:#">info@demolink.org</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="group-md group-middle social-items">
+                <a
+                  class="icon icon-md novi-icon mdi mdi-facebook"
+                  href="index.html#"
+                ></a
+                ><a
+                  class="icon icon-md novi-icon mdi mdi-twitter"
+                  href="index.html#"
+                ></a
+                ><a
+                  class="icon icon-md novi-icon mdi mdi-instagram"
+                  href="index.html#"
+                ></a
+                ><a
+                  class="icon icon-md novi-icon mdi mdi-facebook-messenger"
+                  href="index.html#"
+                ></a
+                ><a
+                  class="icon icon-md novi-icon mdi mdi-linkedin"
+                  href="index.html#"
+                ></a
+                ><a
+                  class="icon icon-md novi-icon mdi mdi-snapchat"
+                  href="index.html#"
+                ></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-5">
+              <h5 class="title">Newsletter</h5>
+              <p>
+                Keep up with our always upcoming news and updates. Enter your
+                e-mail and subscribe to our newsletter.
+              </p>
+              <!-- RD Mailform-->
+              <form
+                class="rd-form form-sm rd-mailform"
+                data-form-output="form-output-global"
+                data-form-type="contact"
+                method="post"
+                action=""
+              >
+                <div class="form-wrap">
+                  <input
+                    class="form-input"
+                    id="newsletter-email2"
+                    type="email"
+                    name="email"
+                    data-constraints="@Email @Required"
+                  />
+                  <label class="form-label" for="newsletter-email2"
+                    >Enter your e-mail</label
+                  >
+                </div>
+                <button class="button button-gradient" type="submit">
+                  <span>Subscribe</span>
+                </button>
+              </form>
+            </div>
+          </div>
+          <!-- Rights-->
+          <p class="rights">
+            <span>&copy;&nbsp; </span><span class="copyright-year"></span
+            ><span>&nbsp;</span><span>All rights reserved</span
+            ><span>.&nbsp;</span>
+          </p>
+        </div>
+      </footer>
+      <!-- Modal-->
+      <div class="modal fade" id="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header context-dark">
+              <h4 class="modal-title">Call Back</h4>
+              <button
+                class="close"
+                type="button"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body bg-default">
+              <form
+                class="rd-form rd-mailform"
+                data-form-output="form-output-global"
+                data-form-type="contact"
+                method="post"
+                action=""
+              >
+                <div class="form-wrap">
+                  <input
+                    class="form-input"
+                    id="modal-name"
+                    type="text"
+                    name="name"
+                    data-constraints="@Required"
+                  />
+                  <label class="form-label" for="modal-name">Name</label>
+                </div>
+                <div class="form-wrap">
+                  <input
+                    class="form-input"
+                    id="modal-phone"
+                    type="text"
+                    name="phone"
+                    data-constraints="@Required @PhoneNumber"
+                  />
+                  <label class="form-label" for="modal-phone">Phone</label>
+                </div>
+                <div class="button-block text-center">
+                  <button
+                    class="button button-gradient d-inline-block"
+                    type="submit"
+                  >
+                    <span>Send</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="scripts/core.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
