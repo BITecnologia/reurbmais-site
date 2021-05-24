@@ -4644,7 +4644,7 @@ blockquote .position {
     margin-top: 32px;
   }
   .footer-2 .footer-logo + p {
-    margin-top: 46px;
+    margin-top: 10px;
   }
   .footer-2 .title + * {
     margin-top: 23px;
@@ -14295,4 +14295,8 @@ body:not(.lg-from-hash)
 
 .theme-switcher-group-item[data-theme-name="style-1"] {
   background: #6297c0;
+}
+
+.list-vantagens li {
+  margin-bottom: 10px;
 }
