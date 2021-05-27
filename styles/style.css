@@ -7495,8 +7495,8 @@ html.tablet .ui-to-top {
 
 @media (min-width: 576px) {
   .ui-to-top {
-    right: 40px;
-    bottom: 40px;
+    right: 65px;
+    bottom: 65px;
   }
 }
 
