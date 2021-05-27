@@ -108,13 +108,19 @@
       attribution:
         'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
       maxZoom: 19,
+      doubleClickZoom: false,
+      closePopupOnClick: false,
+      dragging: false,
+      zoomSnap: false,
+      zoomDelta: false,
+      trackResize: false,
+      touchZoom: false,
       scrollWheelZoom: false,
     }).addTo(mymap);
 
-    L.control.scale().addTo(mymap);
-    L.marker({ lon: -35.29383596413001, lat: -8.11777579412823 })
-      .bindPopup("BI Tecnologia")
-      .addTo(mymap);
+    // L.marker({ lon: -35.29383596413001, lat: -8.11777579412823 })
+    //   .bindPopup("BI Tecnologia")
+    //   .addTo(mymap);
 
     // Page loader & Page transition
     if (plugins.preloader.length && !isNoviBuilder) {
