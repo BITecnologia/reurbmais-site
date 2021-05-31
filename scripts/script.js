@@ -1,5 +1,20 @@
 "use strict";
 (function () {
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBFouKwPcmhR6sS7DgbFCdmw3EmNYs7Xeo",
+    authDomain: "contatoreurbmais.firebaseapp.com",
+    projectId: "contatoreurbmais",
+    storageBucket: "contatoreurbmais.appspot.com",
+    messagingSenderId: "285962637271",
+    appId: "1:285962637271:web:f33cd0cf8db0af142cc592",
+    measurementId: "G-BQ7EXBYYYZ",
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
   // Global variables
   var userAgent = navigator.userAgent.toLowerCase(),
     initialDate = new Date(),
@@ -787,7 +802,7 @@
         for (var j = 0; j < elements.length; j++) {
           var $input = $(elements[j]);
           if ((results = $input.regula("validate")).length) {
-            for (k = 0; k < results.length; k++) {
+            for (var k = 0; k < results.length; k++) {
               errors++;
               $input
                 .siblings(".form-validation")
@@ -801,12 +816,6 @@
               .text("")
               .parent()
               .removeClass("has-error");
-          }
-        }
-
-        if (captcha) {
-          if (captcha.length) {
-            return validateReCaptcha(captcha) && errors === 0;
           }
         }
 
@@ -1596,168 +1605,71 @@
     }
 
     // RD Mailform
-    if (plugins.rdMailForm.length) {
-      var i,
-        j,
-        k,
-        msg = {
-          MF000: "Successfully sent!",
-          MF001: "Recipients are not set!",
-          MF002: "Form will not work locally!",
-          MF003: "Please, define email field in your form!",
-          MF004: "Please, define type of your form!",
-          MF254: "Something went wrong with PHPMailer!",
-          MF255: "Aw, snap! Something went wrong.",
-        };
 
-      for (i = 0; i < plugins.rdMailForm.length; i++) {
-        var $form = $(plugins.rdMailForm[i]),
-          formHasCaptcha = false;
+    $("#contact-form").on("submit", function (e) {
+      e.preventDefault();
 
-        $form.attr("novalidate", "novalidate").ajaxForm({
-          data: {
-            "form-type": $form.attr("data-form-type") || "contact",
-            counter: i,
-          },
-          beforeSubmit: function (arr, $form, options) {
-            if (isNoviBuilder) return;
+      var form = $("#contact-form");
+      var inputs = form.find("[data-constraints]");
+      var output = $("#" + form.attr("data-form-output"));
 
-            var form = $(plugins.rdMailForm[this.extraData.counter]),
-              inputs = form.find("[data-constraints]"),
-              output = $("#" + form.attr("data-form-output")),
-              captcha = form.find(".recaptcha"),
-              captchaFlag = true;
+      if (isValidated(inputs)) {
+        form.addClass("form-in-process");
 
-            output.removeClass("active error success");
+        if (output.hasClass("snackbars")) {
+          output.html(
+            '<p><span class="icon text-middle mdi mdi-email-send-outline icon-xxs"></span><span>Sending</span></p>'
+          );
+          output.addClass("active");
+        }
 
-            if (isValidated(inputs, captcha)) {
-              // veify reCaptcha
-              if (captcha.length) {
-                var captchaToken = captcha.find(".g-recaptcha-response").val(),
-                  captchaMsg = {
-                    CPT001:
-                      'Please, setup you "site key" and "secret key" of reCaptcha',
-                    CPT002: "Something wrong with google reCaptcha",
-                  };
+        let db = firebase.firestore();
 
-                formHasCaptcha = true;
+        let name = $("#contact-name").val();
+        let phone = $("#contact-phone").val();
+        let email = $("#contact-email").val();
+        let message = $("#contact-message").val();
 
-                $.ajax({
-                  method: "POST",
-                  url: "bat/reCaptcha.php",
-                  data: { "g-recaptcha-response": captchaToken },
-                  async: false,
-                }).done(function (responceCode) {
-                  if (responceCode !== "CPT000") {
-                    if (output.hasClass("snackbars")) {
-                      output.html(
-                        '<p><span class="icon text-middle mdi mdi-check icon-xxs"></span><span>' +
-                          captchaMsg[responceCode] +
-                          "</span></p>"
-                      );
-
-                      setTimeout(function () {
-                        output.removeClass("active");
-                      }, 3500);
-
-                      captchaFlag = false;
-                    } else {
-                      output.html(captchaMsg[responceCode]);
-                    }
-
-                    output.addClass("active");
-                  }
-                });
-              }
-
-              if (!captchaFlag) {
-                return false;
-              }
-
-              form.addClass("form-in-process");
-
-              if (output.hasClass("snackbars")) {
-                output.html(
-                  '<p><span class="icon text-middle fa fa-circle-o-notch fa-spin icon-xxs"></span><span>Sending</span></p>'
-                );
-                output.addClass("active");
-              }
-            } else {
-              return false;
-            }
-          },
-          error: function (result) {
-            if (isNoviBuilder) return;
-
-            var output = $(
-                "#" +
-                  $(plugins.rdMailForm[this.extraData.counter]).attr(
-                    "data-form-output"
-                  )
-              ),
-              form = $(plugins.rdMailForm[this.extraData.counter]);
-
-            output.text(msg[result]);
-            form.removeClass("form-in-process");
-
-            if (formHasCaptcha) {
-              grecaptcha.reset();
-            }
-          },
-          success: function (result) {
-            if (isNoviBuilder) return;
-
-            var form = $(plugins.rdMailForm[this.extraData.counter]),
-              output = $("#" + form.attr("data-form-output")),
-              select = form.find("select");
-
+        db.collection("contacts")
+          .add({
+            name: name,
+            phone: phone,
+            email: email,
+            message: message,
+            createdAt: firebase.firestore.Timestamp.now(),
+          })
+          .then(function (docRef) {
             form.addClass("success").removeClass("form-in-process");
 
-            if (formHasCaptcha) {
-              grecaptcha.reset();
+            if (output.hasClass("snackbars")) {
+              output.html(
+                '<p><span class="icon text-middle mdi mdi-email-send icon-xxs"></span><span>Enviado com sucesso</span></p>'
+              );
+              output.addClass("active success");
             }
 
-            result = result.length === 5 ? result : "MF255";
-            output.text(msg[result]);
-
-            if (result === "MF000") {
-              if (output.hasClass("snackbars")) {
-                output.html(
-                  '<p><span class="icon text-middle mdi mdi-check icon-xxs"></span><span>' +
-                    msg[result] +
-                    "</span></p>"
-                );
-              } else {
-                output.addClass("active success");
-              }
-            } else {
-              if (output.hasClass("snackbars")) {
-                output.html(
-                  ' <p class="snackbars-left"><span class="icon icon-xxs mdi mdi-alert-outline text-middle"></span><span>' +
-                    msg[result] +
-                    "</span></p>"
-                );
-              } else {
-                output.addClass("active error");
-              }
+            form.trigger("reset");
+          })
+          .catch(function (error) {
+            if (output.hasClass("snackbars")) {
+              output.html(
+                '<p><span class="icon text-middle mdi mdi-email-remove icon-xxs"></span><span>Erro ao enviar o email</span></p>'
+              );
+              output.addClass("active error");
             }
-
-            form.clearForm();
-
-            if (select.length) {
-              select.select2("val", "");
-            }
-
-            form.find("input, textarea").trigger("blur");
-
-            setTimeout(function () {
-              output.removeClass("active error success");
-              form.removeClass("success");
-            }, 3500);
-          },
-        });
+            console.error("Error adding document: ", error);
+          });
+      } else {
+        var output = $("#form-output-global");
+        output.text("Preencha corretamente os campos requeridos.");
+        return false;
       }
-    }
+
+      setTimeout(function () {
+        output.removeClass("active error success");
+        form.removeClass("success");
+      }, 3500);
+    });
 
     // lightGallery
     if (plugins.lightGallery.length) {
