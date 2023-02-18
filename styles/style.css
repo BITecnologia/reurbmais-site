@@ -6588,6 +6588,10 @@ html [class*="section-"].section-bottom-0 {
   background-color: #f5f5f7;
 }
 
+.sub-title-blog {
+  background-color: #ff9741;
+}
+
 .bg-gray-100:not([style*="background-"])
   + .bg-gray-100:not([style*="background-"]) {
   padding-top: 0;
@@ -14299,4 +14303,30 @@ body:not(.lg-from-hash)
 
 .list-vantagens li {
   margin-bottom: 15px;
+}
+
+.teste {
+  background-color: #f07c21;
+  width: 100%;
+  height: 100%;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.section-ps {
+  padding: 30px 0;
+}
+
+.titlePost {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.post-image {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }

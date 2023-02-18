@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Blog</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+
+    <meta data-react-helmet="true" property="og:description" content="Sistema regularização fundiária urbana">
+    <meta data-react-helmet="true" property="og:description" content="Software regularização fundiária urbana">
+    <meta data-react-helmet="true" property="og:description" content="Reurb software">
+    <meta data-react-helmet="true" property="og:description" content="Software reurb">
+    <meta data-react-helmet="true" property="og:description" content="Sistema Reurb">
+    <meta data-react-helmet="true" property="og:description" content="App Reurb">
+    <meta data-react-helmet="true" property="og:description" content="Aplicativo Reurb">
+    <meta data-react-helmet="true" property="og:description" content="Aplicativo regularização fundiária urbana">
+    <meta data-react-helmet="true" property="og:description" content="Programa verde e amarelo">
+    <meta data-react-helmet="true" property="og:url" content="https://reurbmais.com.br/">
+    <meta data-react-helmet="true" property="og:site_name" content="Reurb">
+
+
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <!-- Stylesheets-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700,900"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/style.css" id="main-styles-link" />
+    
+    <script src="//code.jivosite.com/widget/CgPg6nbzqX" async></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-302SCE9B9X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-302SCE9B9X");
+    </script>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container">
+          <div class="cssload-speeding-wheel"></div>
+        </div>
+        <p>Loading...</p>
+      </div>
+    </div>
+    <div class="page">
+      <!-- Page Header-->
+      <header class="section page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap rd-navbar-absolute">
+          <nav
+            class="rd-navbar rd-navbar-creative"
+            data-layout="rd-navbar-fixed"
+            data-sm-layout="rd-navbar-fixed"
+            data-md-layout="rd-navbar-fixed"
+            data-md-device-layout="rd-navbar-fixed"
+            data-lg-layout="rd-navbar-static"
+            data-lg-device-layout="rd-navbar-static"
+            data-xl-layout="rd-navbar-static"
+            data-xl-device-layout="rd-navbar-static"
+            data-lg-stick-up-offset="20px"
+            data-xl-stick-up-offset="20px"
+            data-xxl-stick-up-offset="20px"
+            data-lg-stick-up="true"
+            data-xl-stick-up="true"
+            data-xxl-stick-up="true"
+          >
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap">
+                    <span></span>
+                  </button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand">
+                    <a class="brand" href="">
+                      <img class="brand-logo-dark" src="images/logo-white.svg" alt="" width="200" height="23" />
+                      <img class="brand-logo-light" src="images/logo-white.svg" alt="" width="200" height="23" />
+                    </a>
+                  </div>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item active">
+                        <a class="rd-nav-link" href="index.html#home">Home</a>
+                      </li>
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="index.html#about">Vantagens e Recursos</a>
+                      </li>
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="index.html#contacts">Contatos</a>
+                      </li>
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="#posts">Posts</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- Swiper-->
+      <section
+        class="section swiper-container swiper-slider swiper-slider-2 swiper-bg"
+        id="home"
+        data-loop="true"
+        data-autoplay="5500"
+        data-simulate-touch="false"
+        data-slide-effect="fade"
+      >
+      </section>
+      <!-- Advantages-->
+      
+      <!-- The Best Banking Choise-->
+      <section class="section section-lg sub-title-blog">
+        <div class="container">
+          <div class="block-lg text-center">
+            <h2>Blog</h2>
+            <p>
+              As últimas notícias sobre Reurbanização da equipe Reurb+
+            </p>
+          </div>
+          <div class="row row-30 row-xxl-60">
+            
+            <div class="col-sm-6 col-md-4 wow fadeInLeft" data-wow-delay="0.3s">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog -->
+      <section class="section section-lg bg-gray-100" id="posts">
+        <div class="container">
+          <div class="block-lg text-justify">
+            <h2>Blog da Reurb+</h2>
+            <p>
+              Quer saber tudo o que está rolando sobre Reurb? Então, você está no lugar certo! 
+              No Blog da Reurb+ você fica por dentro das principais novidades e notícias sobre regularização fundiária urbana.
+            </p>
+          </div>
+          <div id="blog-post" class="row row-30 row-xxl-60">
+            <!-- Os componentes seram inseridos automaticamente -->
+          </div>
+        </div>
+      </section>
+      
+      <section class="section section-lg bg-default" id="contacts">
+        <div class="container">
+          <div class="row row-50 justify-content-between">
+            <div class="col-md-6 col-lg-4 col-xl-3">
+              <div>
+                <ul class="contact-box">
+                  <li>
+                    <div class="unit unit-horizontal unit-spacing-xxs">
+                      <div class="unit-left">
+                        <span class="icon mdi mdi-map-marker"></span>
+                      </div>
+                      <div class="unit-body">
+                        <a class="hover-text" href="index.html#"
+                          >Rua Andre Vidal de Negreiros, 139, apt 302 <br class="veil reveal-lg-inline" />Matriz,
+                          Vitória de Sto Antão, PE 55602-110</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="unit unit-horizontal unit-spacing-xxs">
+                      <div class="unit-left">
+                        <span class="icon mdi mdi-phone"></span>
+                      </div>
+                      <div class="unit-body">
+                        <ul class="list-phones">
+                          <li>
+                            <a class="hover-text" href="tel:+5581971028695">(81) 9 7102 8695</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="unit unit-horizontal unit-spacing-xxs">
+                      <div class="unit-left">
+                        <span class="icon mdi mdi-email-outline"></span>
+                      </div>
+                      <div class="unit-body">
+                        <a class="hover-text" href="mailto:contato@bitecnologia.com.br">contato@bitecnologia.com.br</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="group group-middle social-items">
+                <a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-facebook"
+                  href="https://www.facebook.com/reurb.maisvsa"
+                  target="_blank"
+                ></a>
+                <a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-instagram"
+                  href="https://instagram.com/reurbmais"
+                  target="_blank"
+                ></a>
+                <a
+                  class="icon icon-md icon-gray-400 novi-icon mdi mdi-linkedin"
+                  href="https://www.linkedin.com/in/reurbmais/"
+                  target="_blank"
+                ></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-8">
+              <!-- RD Mailform-->
+              <form
+                id="contact-form"
+                class="rd-form rd-mailform"
+                data-form-output="form-output-global"
+                data-form-type="contact"
+                method="post"
+                action=""
+              >
+                <div class="form-wrap">
+                  <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required" />
+                  <label class="form-label" for="contact-name">Nome</label>
+                </div>
+                <div class="form-wrap">
+                  <input
+                    class="form-input"
+                    id="contact-email"
+                    type="email"
+                    name="email"
+                    data-constraints="@Email @Required"
+                  />
+                  <label class="form-label" for="contact-email">E-mail</label>
+                </div>
+                <div class="form-wrap">
+                  <input class="form-input" id="contact-phone" type="text" name="phone" data-constraints="@Required" />
+                  <label class="form-label" for="contact-phone">Telefone</label>
+                </div>
+                <div class="form-wrap">
+                  <label class="form-label" for="contact-message">Mensagem</label>
+                  <textarea
+                    class="form-input"
+                    id="contact-message"
+                    name="message"
+                    data-constraints="@Required"
+                  ></textarea>
+                </div>
+                <button class="button button-gradient" type="submit">
+                  <span>Enviar</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="mapid"></div>
+      <!-- Page Footer-->
+      <footer class="section footer-2">
+        <div class="container">
+          <div class="row row-40"></div>
+          <a class="footer-logo" style="margin-top: 46px; display: block" href="#home"
+            ><img src="images/logo-white.svg" alt="" width="90"
+          /></a>
+          <!-- Rights-->
+          <p class="rights" style="color: #fff">
+            <span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span
+            ><span>All rights reserved</span><span>.&nbsp;</span>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-firestore.js"></script>
+
+    <!-- Javascript-->
+    <script src="scripts/core.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/blog.js"></script>
+  </body>
+</html>
